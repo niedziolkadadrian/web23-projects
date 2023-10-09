@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function gen(){
+            const main = document.getElementById("main")
+            const key0 = document.createElement("button")
+            key0.innerText = 0
+            key0.onclick = show
+            key0.dataset.value = 0
+            main.appendChild(key0)
+        }
+
+        function show() {
+            alert(this.dataset.value)
+        }
+    </script>
+</head>
+<body onload="gen()">
+<div id="main"></div>
+</body>
+</html>
