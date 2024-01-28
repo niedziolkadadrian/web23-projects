@@ -58,7 +58,7 @@ const loginUser = asyncHandler(async (req, res) =>{
             },
         },
         process.env.ACCESS_TOKEN_SECRET,
-        {expiresIn: "15m" }
+        {expiresIn: "1h" }
         );
         res.status(200).json({accessToken})
     }
@@ -75,5 +75,22 @@ const currentUser = asyncHandler(async (req, res) =>{
     res.json(req.user);
 });
 
+//@desc Current user info
+//@route POST /api/users/renew-token
+//@access private
+const renewTokenUser = asyncHandler(async (req, res) =>{
+    const accessToken = jwt.sign({
+        user:{
+            username: req.user.username,
+            email: req.user.email,
+            id: req.user._id,
+        },
+    },
+    process.env.ACCESS_TOKEN_SECRET,
+    {expiresIn: "1h" }
+    );
+    res.status(200).json({accessToken})
+});
 
-module.exports = { registerUser, loginUser, currentUser }
+
+module.exports = { registerUser, loginUser, currentUser, renewTokenUser }
