@@ -1,5 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 20px;
 }
 
@@ -7,6 +15,166 @@ h1 {
     color: #333;
 }
 
-#result {
-    margin-top: 20px;
+#home {
+    margin-bottom: 20px;
+}
+
+.contact {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+  
+.contact div {
+    margin-bottom: 5px;
+}
+
+.success-message {
+    color: #4CAF50; /* Green color for success */
+    background-color: #DFF0D8; /* Light green background */
+    padding: 10px;
+    border: 1px solid #3D8B3D; /* Darker green border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: #D9534F; /* Red color for error */
+    background-color: #F2DEDE; /* Light red background */
+    padding: 10px;
+    border: 1px solid #D9534F; /* Darker red border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#data button {
+    background-color: #5bc0de; /* Kolor przycisku Dodaj kontakt */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#data .contact .info-button {
+    background-color: #5bc0de; /* Kolor przycisku Info */
+}
+  
+#data .contact .edit-button {
+    background-color: #f0ad4e; /* Kolor przycisku Edytuj */
+}
+  
+#data .contact .delete-button {
+    background-color: #d9534f; /* Kolor przycisku Usuń */
+}
+  
+  /* Dodatkowe style dla każdego przycisku */
+#data .contact button {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+  
+#data .contact button:hover {
+    opacity: 0.8; /* Zmniejszenie przeźroczystości po najechaniu myszką */
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+  
+#user > div {
+    margin-right: 10px;
+}
+  
+#user button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5;
+}
+  
+#user button:hover {
+    background-color: #45a049;
+}
+  
+#home button {
+    background-color: #337ab7; /* Kolor przycisku Strona główna */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#home button:hover {
+    background-color: #286090; /* Kolor przycisku Strona główna po najechaniu myszką */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie elementów wzdłuż osi X */
+}
+ 
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+  
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+  
+  form button:hover {
+    background-color: #45a049;
+}
+
+.redirect-button {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.redirect-button:hover {
+    background-color: #005685;
 }

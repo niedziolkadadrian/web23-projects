@@ -36,7 +36,6 @@ const getContact = asyncHandler(async (req, res) => {
     try{
         contact = await Contact.findById(req.params.id);
     }catch(err){
-        console.log(err);
         if (err.name === 'CastError') {
             res.status(404);
             throw new Error("Contact not found");

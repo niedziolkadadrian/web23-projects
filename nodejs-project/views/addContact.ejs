@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Książka kontaktowa</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts.js"></script>
+</head>
+<body>
+    <h1>Książka kontaktowa</h1>
+    
+    <div id="home"><a href="/"><button>Strona główna</button></a></div>
+    <div id="user"></div>
+    
+    <div id="data-container">
+        <h3>Dodawanie nowego kontaktu</h3>
+        <div id="info"></div>
+        <div id="data">
+            <form id="addContactForm">
+                <label for="name">Nazwa:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <button type="submit">Dodaj kontakt</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', getUserInformations);
+        document.getElementById('addContactForm').addEventListener('submit', addContact);
+    </script>
+</body>
+</html>

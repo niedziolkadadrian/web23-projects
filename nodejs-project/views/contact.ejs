@@ -2,25 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your API Frontend</title>
+    <title>Książka kontaktowa</title>
     <link rel="stylesheet" href="/styles.css">
     <script src="/scripts.js"></script>
 </head>
 <body>
-    <h1>Ksiażka kontaktowa</h1>
+    <h1>Książka kontaktowa</h1>
+    
     <div id="home"><a href="/"><button>Strona główna</button></a></div>
     <div id="user"></div>
     <div id="data-container">
-        <h3>Lista kontaktów</h3>
+        <h3>Informacje o kontakcie</h3>
         <div id="info"></div>
-        <div id="data">
-            <!-- API data will be displayed here -->
-        </div>
+        <div id="data"></div>
     </div>
     
     <script>
         document.addEventListener('DOMContentLoaded', getUserInformations);
-        document.addEventListener('DOMContentLoaded', getContacts);
+        document.addEventListener('DOMContentLoaded', getContactInfo);
     </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksiażka kontaktowa</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts.js"></script>
+</head>
+<body>
+    <h1>Ksiażka kontaktowa</h1>
+    <div id="home"><a href="/"><button>Strona główna</button></a></div>
+    <h1>Pomyślnie zarejestrowano</h1>
+    
+    <div class="success-message">
+        <p>Pomyślnie zarejestrowano użytkownika o adresie email: <%= email %></p>
+    </div>
+
+    <div class="redirect-buttons">
+        <button class="redirect-button" onclick="redirectToLogin()">Zaloguj</button>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', redirectIfLoggedIn);
+       
+        function redirectToLogin() {
+        window.location.href = '/login';
+        }
+    </script>
+</body>
+</html>

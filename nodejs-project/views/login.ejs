@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksiażka kontaktowa</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts.js"></script>
+</head>
+<body>
+    <h1>Ksiażka kontaktowa</h1>
+    <div id="home"><a href="/"><button>Strona główna</button></a></div>
+    <h3>Logowanie</h3>
+    <div id="info"></div>
+    <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <button type="submit">Login</button>
+    </form>
+    
+    <script>
+        // Client-side JavaScript to fetch data from the API
+        document.addEventListener('DOMContentLoaded', redirectIfLoggedIn);
+        document.getElementById('loginForm').addEventListener('submit', login);
+
+    </script>
+</body>
+</html>
